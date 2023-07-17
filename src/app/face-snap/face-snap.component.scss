@@ -1,0 +1,78 @@
+.face-snap-card {
+    width: 50%;
+    margin: 10px auto;
+    padding: 20px 30px;
+    box-shadow: 4px 4px 20px #d3d3d3;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    h2 {
+      display: flex;
+      justify-items: center;
+      align-items: center;
+      padding: 15px 0 5px 0;
+      gap: 10px;
+      span{
+      border-radius: 50%;
+      font-size: 13px;
+    }
+    }
+    .location{
+      // font-size: 12px;
+      color: rgb(32, 17, 202);
+    }
+    img {
+      width: 100%;
+    }
+    .createdDate {
+      font-size: 12px;
+      color: #999;
+    }
+    .snaps{
+      display: flex;
+      align-items: center;
+      justify-items: center;
+      gap: 10px;
+    }
+    button{
+      border-color: transparent;
+      padding: 5px 10px;
+      border : none;
+      box-shadow: 3px 3px 7px #d3d3d3;
+      outline: none;
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+      &:active{
+        transform: translate(2px,2px);
+        box-shadow: 0 0 5px #d3d3d3;
+      }
+    }
+    .snapSpan{
+      font-weight: 600;
+    }
+  }
+
+  .snapped {
+    background-color: rgba(lightblue, 0.4);
+    color: darkblue;
+    button {
+      box-shadow: lightblue 3px 3px 7px;
+      color: darkblue;
+      &:active {
+        box-shadow: lightblue 0 0 5px;
+      }
+    }
+    @keyframes displaySlower{
+      0%{
+        opacity: 0;
+        transform: translateX(0px);
+      }
+      100%{
+        opacity: 1;
+        transform: translatX(0);
+      }
+    }
+    animation: displaySlower 1s ease-in-out;
+  }
+  

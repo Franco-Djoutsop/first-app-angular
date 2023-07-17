@@ -6,6 +6,12 @@
 /out-tsc
 /bazel-out
 
+#Essential Notes
+ .vscode
+ angularEssential.doc
+"angularEssentialNote (R\303\251cup\303\251ration automatique).doc"
+~$gularEssential.doc
+
 # Node
 /node_modules
 npm-debug.log
